@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    background-size: cover;
+}
+
+.banner .content{
+    max-width: 900px;
+    text-align: center;
+    margin-left: 5%;
+}
+
+.banner .content h2{
+    text-align: left;
+    font-size: 2em;
+    color: #FFE3E1;
+}
+
+.banner .content h1{
+    font-size: 3em;
+    color: #fff;
+}
+
+
+.btn{
+    font-size: 1em;
+    color: white;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    letter-spacing: 4px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky{
+    background: aliceblue;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+header .logo{
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+header .logo-aboutus{
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+header.sticky .logo{
+    color: #111;
+}
+
+header.sticky .logo-aboutus{
+    color: #111;
+}
+
+header .logo span{
+    color: #ff0157;
+}
+
+
+header .logo-aboutus span{
+    color: #ff0157;
+}
+
+header .navigation{
+    position: relative;
+    display: flex;
+}
+
+header .navigation-aboutus{
+    position: relative;
+    display: flex;
+}
+
+header .navigation li{
+    list-style: none;
+    margin-left: 30px;
+
+}
+
+header .navigation-aboutus li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navigation li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 300;
+
+}
+
+header .navigation-aboutus li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 300;
+}
+
+header.sticky .navigation li a{
+    color: black;
+}
+
+header.sticky .navigation-aboutus li a{
+    color: black;
+}
+
+header .navigation li a:hover{
+    color: #ff0157;
+}
+
+header .navigation-aboutus li a:hover{
+    color: #ff0157;
+}
+
+table{
+    padding-top: 60px;
+    justify-content: center;
+    margin: 0;
+}
+
+table p{
+    color: #fff;
+}
+
+table img{
+    max-height: 500px;
+    max-width: 400px;
+    height: 100%;
+    width: 80%;
+    border-radius: 15px;
+}
+
+table h1{
+    font-size: 2em;
+    margin-left:0;
+}
+
+.section{
+    position: relative;
+    min-height: 20vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+:root{
+    --white: #f2fcff;
+    --grey: #0c344faa;
+    --black: #020c22cc;
+    --black-s: #020c22;
+    --purple: #7283c2cc; 
+    --red: #ff0157;
+}
+
+
+#modal-btn:checked,
+#modal-btn:not(:checked) {
+    position: absolute;
+    display: none;
+}
+
+#modal-btn:checked + label,
+#modal-btn:not(:checked) + label{
+    position: relative;
+    height: 50px;
+    padding: 0 30px;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    cursor: pointer;
+    color: var(--white);
+    background-color: var(--red);
+    border-radius: 20px;
+    border: 3px solid var(--white);
+    box-shadow: 0 0 20px var(--purple);
+    transition: .2s ease;
+}
+
+#modal-btn:not(:checked) + label:hover{
+    background-color: var(--black);
+    background-color: var(--purple);
+} 
+
+#modal-btn:checked + label i,
+#modal-btn:not(:checked) + label i{
+    margin-left: 10 px;
+    font-size: 18px;
+}
+
+#modal-btn:checked + label .bx-x,
+#modal-btn:not(:checked) + label .bx-x{
+    position: fixed;
+    top: 80px;
+    right: 70px;
+    color: var(--white);
+    background-color: var(--white);
+    z-index: 110;
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--white);
+    border-radius: 500%;
+    line-height: 38px;
+    font-size: 20px;
+    box-shadow: none;
+    pointer-events: none;
+    opacity: 0;
+}
+
+#modal-btn:checked + label .bx-x,:hover
+#modal-btn:not(:checked) + label .bx-x:hover{
+    transform: scale(.9);
+    box-shadow: 0 0 10px var(--purple);
+    background-color: var(--black);
+}
+
+#modal-btn:checked + label .bx-x{
+    transition: opacity .3s .3s ease,
+                transform .1s .1s ease,
+                box-shadow .1s .1s ease,
+                background-color .25s linear,
+                color .25s linear;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal{
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    overflow-x: hidden;
+    background-color: #00000070;
+    pointer-events: none;
+    transition: opacity .25s .7s ease;
+    opacity: 0;
+}
+
+#modal-btn:checked ~ .modal{
+    pointer-events: auto;
+    opacity: 1;
+    transition: all .3s ease-in-out;
+}
+
+.modal-wrap{
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 90px;
+    margin-bottom: 45px;
+    border: 3px solid var(--white);
+    border-radius: 20px;
+    overflow: hidden;
+    color: var(--white);
+    padding-bottom: 20px;
+    background-color: var(--black-s);
+    align-self: center;
+    box-shadow: 0 0 15px var(--purple);
+    transition: opacity .25s .25s ease, transform .3s .25s ease;
+     opacity: 0;
+     transform: scale(.6s);
+}
+
+.modal-wrap .img{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 400px;
+    background: url(../../gambar/paksudarsa3.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.modal-wrap .img::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 200px;
+    bottom: 0;
+    background: linear-gradient(to top, #020c22 5%, #020c2200 100%);
+}
+
+.modal-wrap h2{
+    position: absolute;
+    font-size: 35px;
+    top: 400px;
+    left: 30px;
+}
+
+.modal-wrap p{
+    font-size: 15px;
+    padding: 20px 30px 0;
+}
+
+#modal-btn:checked ~ .modal .modal-wrap{
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity .25s .5s ease, transform .35s .5s ease;
+}
+
+.modal .modal-wrap table{
+    margin-left: 5%;
+}
+
+.modal .modal-wrap table tr .kosong1{
+    color: var(--black-s);
+}
+
+.teks{
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 60px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+@media (max-width: 991px){
+    header,
+    header.sticky{
+        padding: 10px 20px;
+    }
+    header .navigation{
+        display: none;
+    }
+
+    header .navigation.active{
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: aliceblue;
+    }
+
+    header .navigation li{
+        margin-left: 0;
+    }
+
+    header .navigation li a{
+        color: #111;
+        font-size: 1.6em;
+    }
+
+    .banner .content h2{
+        font-size: 1.5em;
+    }
+
+    .banner .content h1{
+        font-size: 1.8em;
+    }
+
+    .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(../../gambar/garis-3.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuToggle.active{
+        background: url(../../gambar/silang-1.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    section{
+        padding: 20px;
+    }
+    table img{
+        height: 60%;
+        width: 70%;
+        border-radius: 15px;
+    }
+    .teks{
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 30px;
+        font-size: 18px;
+    }
+    /*about-us style (di hp)*/
+    .about .box-about{
+        flex-direction: column-reverse;
+    }
+    .about .box-about .box:nth-child(2){
+        width: 200px;
+        height: 150px;
+    }
+}
+

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+    <link rel="stylesheet" href="dist/css/style-about.css">
+    <title>Kelompok 6 - tentang kita</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo-aboutus">Middleton<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation-aboutus">
+            <li><a href="index.html">Profile</a></li>
+            <li><a href="biografi.html">Biografi</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+    </header>
+    <section class="banner-about" id="banner-about"> 
+        <div class="content">
+            <h2>About Us</h2>
+            <a href="#aboutus" class="btn">Tentang Kita</a>
+        </div>
+    </section>
+    <section class="testimonials">
+        <div class="container">
+          <div class="testimonials-slider">
+            <div id="aboutus">
+              <img src="gambar/ega.jpg" alt="">
+              <p>Nama : I Made Egastya Yudi Saputra <br>
+                Umur  : 16  <br>
+                Kelas : X-rpl2  <br>
+                Hobby : Main Game, Ngoding  <br></p>
+              <h3>Ega</h3>
+            </div>
+            <div>
+              <img src="gambar/bintang.jpg" alt="Testimonial 2">
+              <p>Nama : I Gde Bintang Askha Abimanyu <br>
+                Umur  : 15 <br>
+                Kelas : X-rpl2 <br>
+                Hobby : Berenang <br></p>
+              <h3>Bintang</h3>
+            </div>
+            <div>
+              <img src="gambar/ardy2.jpeg" alt="Testimonial 3">
+              <p>Nama : Putu Bagus Ardy Berata<br>
+                Umur  : 15 <br>
+                Kelas : X-rpl2 <br>
+                Hobby :  Mendengarkan Musik <br></p>
+              <h3>Ardy</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonials">
+        <div class="container">
+          <div class="testimonials-slider">
+            <div>
+              <img src="gambar/marvin.jpeg" alt="">
+              <p>Nama : Marvin Randolph Middleton <br>
+                Umur  : 17  <br>
+                Kelas : X-rpl2  <br>
+                Hobby : Gaming, Basket  <br></p>
+              <h3>Ega</h3>
+            </div>
+            <div>
+              <img src="gambar/faza.jpg" alt="Testimonial 2">
+              <p>Nama : Renandra Faza Pahlevi <br>
+                Umur  : 16 <br>
+                Kelas  : X-rpl2 <br>
+                Hobby :  Mendengar musik, Menonton film<br></p>
+              <h3>Faza</h3>
+            </div>
+            <div>
+              <img src="gambar/kei.jpeg" alt="Testimonial 3">
+              <p>Nama : I Made Kei Putra<br>
+                Umur  : 16 <br>
+                Kelas : X-rpl2 <br>
+                Hobby :  Gaming, Coding, 3D Modeling <br></p>
+              <h3>Kei</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonials">
+        <div class="container">
+          <div class="testimonials-slider">
+            <div>
+              <img src="gambar/savero2.jpeg" alt="Testimonial 2">
+              <p>Nama : I Putu Andyan Savero  Kusuma Bawana<br>
+                Umur : 15<br>
+                Kelas : X-rpl2 <br>
+                Hobby : bermain badminton <br></p>
+              <h3>Savero</h3>
+            </div>
+      </section>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+   <script type="text/javascript">
+    window.addEventListener('scroll', function(){
+        const header = document.querySelector('header');
+        header.classList.toggle("sticky", window.scrollY > 0);
+    });
+
+    function toggleMenu(){
+        const menuToggle = document.querySelector('.menuToggle');
+        const navigation = document.querySelector('.navigation-aboutus');
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active')
+    }
+    
+</script>
+</body>
+</html>
